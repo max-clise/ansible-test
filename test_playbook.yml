@@ -3,7 +3,6 @@
 - hosts: all
   tasks:
     - name: tunnel 4 config
-      gather_facts: false
       raw: 'sh run int tunnel4'
 
       register: print_output
