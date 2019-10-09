@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: routers
   tasks:
     - name: tunnel 4 config
       raw: 'sh run int tunnel4'
