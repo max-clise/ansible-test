@@ -3,6 +3,7 @@
 - name: Get Tunnel 4 Interface Config
   gather_facts: false
 
+- hosts: all
   tasks:
   - name: tunnel 4 config
     raw: 'sh run int tunnel4'
