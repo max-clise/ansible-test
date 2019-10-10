@@ -16,5 +16,4 @@
       ios_config:
         match: exact
         before: no snmp-server community BB+pr1vat3 RW SNMP_ACL
-        lines:
-          - snmp-server community BB+pr1vat3 RW snmp.acl
+        lines: snmp-server community BB+pr1vat3 RW snmp.acl
