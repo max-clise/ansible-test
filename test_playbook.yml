@@ -1,11 +1,11 @@
 ---
 
-- hosts: all
+- name: "Get interface Tunnel 4 Config"
+  hosts: all
+  gather_facts: no
+  
   tasks:
-    - name: tunnel 4 config
-      gather_facts: no
-      raw: 'sh run int tunnel4'
-
+    - raw: 'sh run int tunnel4'
       register: print_output
 
     - debug: var=print_output.stdout_lines
