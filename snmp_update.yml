@@ -1,5 +1,7 @@
 ---
-
+-hosts: all
+  gather_facts: false
+  
 - name: Update SNMP ACL
   ios_config:
   match: exact
