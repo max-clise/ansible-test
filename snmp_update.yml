@@ -11,9 +11,9 @@
       - permit 10.10.25.70
       - permit 10.3.25.17
 
-  - name: Update SNMP ios_config
-    ios_config:
-      match: exact
-      before: no snmp-server community BB+pr1vat3 RW SNMP_ACL
-      lines:
-        - snmp-server community BB+pr1vat3 RW snmp.acl
+- name: Update SNMP ios_config
+  ios_config:
+    match: exact
+    before: no snmp-server community BB+pr1vat3 RW SNMP_ACL
+    lines:
+      - snmp-server community BB+pr1vat3 RW snmp.acl
