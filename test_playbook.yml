@@ -2,13 +2,12 @@
 - name: "Get interface Tunnel 4 Config"
   hosts: all
   gather_facts: false
-  connection: local
   
   tasks:
     - name: Run Command
-      cli_command:
-        commands: show run int tunnel4
-      register: command_output
+      ios_command:
+        commands: 
+          - show run int tunnel4
 
     - name: PRINT TO TERMINAL WINDOW
       debug:
