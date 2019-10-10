@@ -8,6 +8,7 @@
       ios_command:
         commands: 
           - show run int tunnel4
+      register: command_output
 
     - name: PRINT TO TERMINAL WINDOW
       debug:
