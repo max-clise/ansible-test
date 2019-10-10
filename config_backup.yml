@@ -5,9 +5,9 @@
   tasks:
     - name: show run 
       ios_command:
-      commands:
-        - show run 
-    register: config
+        commands:
+          - show run 
+      register: config
 
      - name: save output to /etc/ansible/backups 
        copy: 
