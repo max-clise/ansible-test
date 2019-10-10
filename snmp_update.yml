@@ -7,9 +7,9 @@
     match: exact
     before: no ip access-list standard SNMP_ACL
     parents: ip access-list standard snmp.acl
-      lines:
-        - permit 10.10.25.70
-        - permit 10.3.25.17
+    lines:
+      - permit 10.10.25.70
+      - permit 10.3.25.17
 
   - name: Update SNMP ios_config
     ios_config:
