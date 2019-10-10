@@ -7,7 +7,7 @@
     - name: Run Command
       ios_command:
         commands: 
-          - show run
+          - show run aaa
       register: command_output
 
     - name: PRINT TO TERMINAL WINDOW
