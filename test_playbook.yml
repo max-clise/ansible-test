@@ -7,7 +7,7 @@
     - name: Run Command
       ios_command:
         commands: 
-          - show run int tunnel4
+          - show run
       register: command_output
 
     - name: PRINT TO TERMINAL WINDOW
