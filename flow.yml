@@ -8,8 +8,8 @@
       ios_command:
         commands:
           - show run flow exporter
-            show run flow monitor
-            show run flow record
+          - show run flow monitor
+          - show run flow record
       register: command
 
     - name: "Print Output"
