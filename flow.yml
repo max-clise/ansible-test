@@ -13,7 +13,7 @@
           - show flow interface | i Interface
       register: command
 
-    - name: save output to file
+    - name: "Save output to file"
       copy: 
-        content: "{{ config.stdout[0] }}"
+        content: "{{ command.stdout[0] }}"
         dest: "/etc/misc-outputs/{{ inventory_hostname }}.txt"
