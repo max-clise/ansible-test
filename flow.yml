@@ -10,8 +10,10 @@
           - show run flow exporter
           - show run flow monitor
           - show run flow record
+          - show flow interface | i Interface
       register: command
 
-    - name: "Print Output"
-      debug:
-        msg: "{{command.stdout}}"
+    - name: save output to file
+      copy: 
+        content: "{{ config.stdout[0] }}"
+        dest: "/etc/misc-outputs/{{ inventory_hostname }}.txt"
