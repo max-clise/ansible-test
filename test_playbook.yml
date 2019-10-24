@@ -1,6 +1,6 @@
 ---
 - name: "Get interface Tunnel 4 Config"
-  hosts: all
+  hosts: DMVPN-Routers
   gather_facts: true
   
   tasks:
