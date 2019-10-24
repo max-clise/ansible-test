@@ -1,6 +1,6 @@
 ---
 - name: "Netflow Config"
-  hosts: Core_Swithces
+  hosts: Core_Switches
   gather_facts: false
 
   tasks:
