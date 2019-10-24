@@ -1,0 +1,17 @@
+---
+- name: "Netflow Config"
+  hosts: Core_Swithces
+  gather_facts: false
+
+  tasks:
+    - name: "Run Show Commands"
+      ios_command:
+        commands:
+          - show run flow exporter
+            show run flow monitor
+            show run flow record
+      register: command
+
+    - name: "Print Output"
+      debug:
+        msg: "{{comamnd.stdout}}"
