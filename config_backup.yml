@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: DMVPN-Routers
   gather_facts: false
 
   tasks:
