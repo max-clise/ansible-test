@@ -14,4 +14,4 @@
 
     - name: "Print Output"
       debug:
-        msg: "{{comamnd.stdout}}"
+        msg: "{{command.stdout}}"
